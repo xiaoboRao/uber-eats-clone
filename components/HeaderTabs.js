@@ -5,7 +5,7 @@ export default function HeaderTabs() {
   const [activeTab, setActiveTab] = useState('Delivery')
 
   return (
-    <View style={{ display: 'flex', direction: 'row' }}>
+    <View style={{ flexDirection: 'row', alignSelf: 'center' }}>
       <HeaderButton activeTab={activeTab} setActiveTab={setActiveTab} text="Delivery" />
       <HeaderButton activeTab={activeTab} setActiveTab={setActiveTab} text="Pickup" />
     </View>
